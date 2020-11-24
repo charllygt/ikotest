@@ -1,0 +1,9 @@
+<div class="card text-center" style="width: 13rem">
+  <a routerLink="/shop/detail/{{ product.id }}"
+    ><img typeof="foaf:Image" class="product-image" [src]="getImageMain()" width="200" height="200" alt="" />
+  </a>
+  <div class="card-body">
+    <div class="product-name field-content card-text">{{ product.title }}</div>
+    <div class="product-price field-content card-text">${{ product.price }}</div>
+  </div>
+</div>

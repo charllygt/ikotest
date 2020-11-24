@@ -1,0 +1,24 @@
+/*
+ * Global application theme.
+ * Framework overrides and customization goes here.
+ */
+
+
+ .my-header-navbar{
+   background-color: $header-navbar !important;
+ }
+
+.product-name{
+  font-weight: bold;
+}
+
+.product-image{
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+.product-price{
+  color: rgb(247,127,0);
+  font-weight: bold;
+}
+//  @import "theme-variables.scss";

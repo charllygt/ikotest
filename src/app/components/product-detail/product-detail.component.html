@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card text-center" style="width: 100%">
+        <img
+          typeof="foaf:Image"
+          class="product-image"
+          style="padding: 10px"
+          [src]="getImageMain()"
+          width="200"
+          height="200"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 product-name field-content card-text">{{ productDetail.title }}</div>
+    <div class="col-sm-12 product-price field-content card-text">${{ productDetail.price }}</div>
+  </div>
+
+  <div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+    <div>
+      <div class="card-header" role="tab" id="headingOne">
+        <a data-toggle="collapse" data-parent="#accordion" href="" aria-expanded="true" aria-controls="">
+          <span class="product-detail-desc-text">Description</span>
+          <i class="now-ui-icons arrows-1_minimal-down pull-rigth"></i>
+        </a>
+      </div>
+
+      <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+        <div class="card-body">
+          <span class="product-detail-desc-text">{{ productDetail.description }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-detail-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-default">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
